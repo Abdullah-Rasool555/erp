@@ -14,10 +14,11 @@ return new class extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('image'); // Store image path
+            $table->string('image_path')->default('img/image.jpg'); // Default image
             $table->timestamps();
-        }); 
+        });
     }
+
 
 
     /**

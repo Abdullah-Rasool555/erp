@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h2>Image List</h2>
+    <h2>Image Gallery</h2>
     <a href="{{ route('images.create') }}" class="btn btn-success">Upload New Image</a>
 
     @if(session('success'))
